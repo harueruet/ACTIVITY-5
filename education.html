@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+        :root {
+            --bg-color: rgb(32, 31, 31);
+            --text-color: white;
+            --main-color: rgb(224, 77, 77);
+        }
+
+        html {
+            font-size: 60%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100;
+            padding: 4rem 12% 4rem;
+            background:  rgb(32, 31, 31);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 5;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: var(--text-color);
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .logo span {
+            text-shadow: 0 0 25px var(--main-color);
+        }
+
+        .navbar a {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-radius: 3px solid transparent;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--main-color);
+            border-bottom: 3px solid var(--main-color);
+        }
+
+        #menu-icon {
+            font-size: 3.6rem;
+            color: var(--main-color);
+            display: none;
+        }
+        
+        section {
+            min-height: 100vh;
+            padding: 10rem 12% 10rem
+        }
+        
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15rem;
+        }
+
+        .home-content {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            text-align: left;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        span {
+            color: var(--main-color);
+        }
+        span {
+            color: var(--main-color);
+        }
+
+        .logo span {
+            color: var(--main-color);
+        }
+
+        .home-content h3 {
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            font-size: 3.5rem;
+        }
+
+        .home-content h1 {
+            font-size: 7rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            line-height: 1;
+        }
+
+        .home-content p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.8;
+            max-width: 1000px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">
+                <span> Marla Rue Canlas</span></a>
+    
+            <i class='bx bx-menu'id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1><span>Education</span></h1>
+            </div>
+
+            <div class="home-text">
+                <h1>Senior High School</h1>
+                <h4>2022 - Present</h4>
+                    <br>
+                <h1>Junior High School</h1>
+                <h4>2018 - 2022</h4>
+            </div>
+
+            <div class="home-img">
+                <h1>FEU High School</h1>
+                <p>Nicanor Reyes St., Sampaloc, Manila</p>
+                <p> Science, Technology, Engineering, and Mathematics </p>
+                    <br>
+                <h1>Blessed Sacrament Catholic School</h1>
+                <p>J.P. Ramoy St., Talipapa, Quezon City</p>
+                <p>Grade 7 to Grade 10</p>
+
+            </div>
+            
+        </section>    
+
+    </body>
+    </html>
